@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Dosis Biochar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Dosis Biochar</h1>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="phTanah">Tingkat pH Tanah:</label>
+                <select id="phTanah">
+                    <option value="">Memuat...</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="teksturTanah">Tipe Tekstur/Fisik Tanah:</label>
+                <select id="teksturTanah">
+                    <option value="">Memuat...</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="kandunganOrganik">Tingkat Kandungan Organik:</label>
+                <select id="kandunganOrganik">
+                    <option value="">Memuat...</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="tipeAplikasi">Tipe Aplikasi:</label>
+                <select id="tipeAplikasi">
+                    <option value="Per Lubang">Per Lubang</option>
+                    <option value="Per Bedeng">Per Bedeng</option>
+                    <option value="Per Area Tanam">Per Area Tanam</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="calculateButton">Hitung Rekomendasi</button>
+
+        <div class="output-section">
+            <h2>Hasil Rekomendasi:</h2>
+            <div id="rekomendasiDosis">
+                <p><strong>Rekomendasi Dosis:</strong> -</p>
+            </div>
+            <div id="catatanPenting">
+                <p><strong>Fokus Utama & Catatan Penting:</strong> -</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
